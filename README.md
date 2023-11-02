@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
--   [Solution](https://your-solution-url.com)
+-   [Solution](https://github.com/NataJenkins/nft-preview-component)
 -   [Live Site](https://gorgeous-maamoul-31d952.netlify.app)
 
 ### Built with
