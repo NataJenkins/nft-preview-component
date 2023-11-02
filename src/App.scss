@@ -1,0 +1,93 @@
+@import "./_base.scss";
+
+.card-container {
+    width: 350px;
+    box-sizing: border-box;
+    padding: 24px;
+    background-color: $very-dark-blue-2;
+    font-family: "Outfit", sans-serif;
+    border-radius: 15px;
+    .image-container {
+        position: relative;
+        cursor: pointer;
+        background-color: $Cyan;
+        border-radius: 8px;
+        overflow: hidden;
+        height: 302px;
+        .nft-image {
+            width: 100%;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+        .icon {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+            display: none;
+        }
+        &:hover {
+            .icon {
+                display: block;
+            }
+        }
+    }
+    .title {
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 24px;
+        margin-bottom: 16px;
+        cursor: pointer;
+        &:hover {
+            color: $Cyan;
+        }
+    }
+    .description {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 26px;
+        color: $soft-blue;
+    }
+    .details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $soft-blue;
+        .price {
+            color: $Cyan;
+            display: flex;
+            align-items: center;
+        }
+        .time-stamp {
+            color: $soft-blue;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+    }
+    .author {
+        display: flex;
+        align-items: center;
+        color: $soft-blue;
+        img {
+            width: 33px;
+            margin-right: 16px;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            span {
+                color: white;
+                cursor: pointer;
+                &:hover {
+                    color: $Cyan;
+                }
+            }
+        }
+    }
+}
